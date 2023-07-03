@@ -19,7 +19,7 @@ public class SampleBootApp1Application {
 	
 	@RequestMapping("/")
 	public String index() {
-		return "Hello,Spring Boot 3!!!";
+		return "Hello,Spring Boot!!!";
 	}
 
 }
