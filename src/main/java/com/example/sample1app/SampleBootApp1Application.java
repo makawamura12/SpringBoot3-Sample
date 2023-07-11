@@ -15,21 +15,4 @@ public class SampleBootApp1Application{
 		app.setBannerMode(Mode.OFF);
 		app.run(args);
 	}
-	
-//	@RequestMapping("/")
-//	public String index(HttpServletRequest request,HttpServletResponse response) {
-//		response.setContentType(MediaType.TEXT_HTML_VALUE);
-//		String content = """
-//				<html>
-//					<head>
-//					<title>Sample App</title>
-//					</head>
-//					<body>
-//					<h1>Sample App</h1>
-//					<p>This is sample app page!</p>
-//				</html>
-//				""";
-//		return content;
-//		
-//	}
 }
