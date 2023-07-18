@@ -9,8 +9,11 @@
 <body class="container">
 	<h1 class="display-4 mb-4">Hello page</h1>
 	<p th:text="${msg}"></p>
-	<ul class="list-group" th:each="item:${data}">
-		<li class="list-group-item" th:text="${item}"></li>
-	</ul>
+	<div th:switch="${eng}">
+		<p class="alert alert-primary" th:case=null th:text="翻訳してみよう"></p>
+		<p class="alert alert-danger" th:case="apple" th:text="${eng} + はリンゴです"></p>
+		<p class="alert alert-warning" th:case="lemon" th:text="${eng} + はレモンです"></p>
+		<p class="alert alert-secondary" th:case="*" th:text="すみません、よくわかりません。"></p>
+	</div>
 </body>
 </html>
