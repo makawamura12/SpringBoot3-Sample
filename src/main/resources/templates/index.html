@@ -7,13 +7,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="container">
-	<h1 class="display-4 mb-4">Hello page</h1>
+	<h1 class="display-4 mb-4" th:text="${title}"></h1>
 	<p th:text="${msg}"></p>
-	<div th:switch="${eng}">
-		<p class="alert alert-primary" th:case=null th:text="翻訳してみよう"></p>
-		<p class="alert alert-danger" th:case="apple" th:text="${eng} + はリンゴです"></p>
-		<p class="alert alert-warning" th:case="lemon" th:text="${eng} + はレモンです"></p>
-		<p class="alert alert-secondary" th:case="*" th:text="すみません、よくわかりません。"></p>
-	</div>
+	<pre ht:text="${data}"></pre>
 </body>
 </html>
